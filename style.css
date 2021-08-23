@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    cursor:none;
+}
+
+body{
+    color: #0d56d9;
+    font-size:18px;
+    font-family:'mainFont',Arial,sans-serif;
+    line-height:1.55;
+    background-color:#FCFFDB;
+    cursor: none !important;
+}
+
+header{
+    display: flex;
+
+}
+
+.logo-container{
+    position: relative;
+    left: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-buttons{
+    position: relative;
+    right: -700px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-height: 10vh;
+    align-items: center;
+    cursor: none;
+}
+
+.nav-buttons a{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    float: left;
+    color: #0d56d9;
+    text-align: center;
+    padding: 12px 26px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'mainFont',Arial,sans-serif;
+
+}
+
+/*ignore .hovered-link, use this instead*/
+.nav-buttons a:hover {
+    color: #FCFFDB;
+}
+
+.link:hover{
+    cursor: none;
+}
+
+.main {
+    margin: 50px;
+    margin-left: 0px;
+    cursor: none;
+    z-index: -3;
+    
+}
+
+
+.row{
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+padding: 0px;
+/*used to be 8px*/
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-text, .shop-text{
+    margin: 100px;
+    padding: 30px 20px;
+    text-align: center;
+    font-family:'mainFont',Arial,sans-serif;
+    font-size: 20px;
+}
+
+.cursor{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #0d56d9;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    
+}
+
+.link-grow{
+    transform: scale(2);
+    background: #0d56d9;
+    border: none;
+}
+
+.hovered-link{
+    color: #FCFFDB;
+}
+
+.distortiongroup{
+    padding:0px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    min-height: 10vh;
+    align-items: center;
+
+}
+
+.distortion{
+    width: 300px;
+    height: 350px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.distortion2{
+    width: 350px;
+    height: 300px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.distortion3{
+    width: 300px;
+    height: 300px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.distortion4{
+    width: 300px;
+    height: 300px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.pastpics{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: -3;
+    
+}
+
+.gallerycaption{
+    padding: 30px 0px;
+    text-align: center;
+    font-family:'mainFont',Arial,sans-serif;
+    font-size: 20px;
+}
+
+
+.spaceblock{
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
